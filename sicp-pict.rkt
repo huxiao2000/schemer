@@ -1,7 +1,6 @@
 #lang racket
 (require graphics)
 (open-graphics)
-(define canvas (open-viewport "canvas" 512 512))
 (struct frame (o x y))
 (define (add p1 p2)
   (make-posn (+ (posn-x p1) (posn-x p2))
